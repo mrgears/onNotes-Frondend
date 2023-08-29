@@ -19,7 +19,7 @@ const Signup = (props) => {
     // console.log(json);
     if (json.success) {
       localStorage.setItem('token', json.authtoken);
-      navigate("/");
+      navigate("/home");
       props.showAlert('Account Created', 'success')
     }
     else {
@@ -33,7 +33,7 @@ const Signup = (props) => {
   return (
     <>
       <div className='mt-3'>
-        <h3>Login to continue Cloud-Notebook</h3>
+        <h3>Login to continue Simple-Notez</h3>
         <form onSubmit={handleSubmit}>
           <div className="mb-3">
             <label htmlFor="name" className="form-label">Name</label>

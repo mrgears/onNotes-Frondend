@@ -12,7 +12,7 @@ function Notes(props) {
             getNotes()
         }
         else {
-            navigate("/login");
+            navigate("/");
         }
         // eslint-disable-next-line
     }, [])
